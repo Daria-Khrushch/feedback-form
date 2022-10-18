@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Apercu Arabic Pro';
+    src: local('Apercu Arabic Pro Light'), local('Apercu-Arabic-Pro-Light'),
+        url('ApercuArabicPro-Light.woff2') format('woff2'),
+        url('ApercuArabicPro-Light.woff') format('woff'),
+        url('ApercuArabicPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
