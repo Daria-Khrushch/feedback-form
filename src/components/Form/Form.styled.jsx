@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.div`
+export const Container = styled.form`
   max-width: 500px;
   z-index: 1;
   margin-left: 100px;
