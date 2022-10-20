@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { addFeedback } from 'axios.js';
 import { sendMessage } from 'redux/formSlice';
 import {
   Title,
@@ -19,7 +20,6 @@ const Form = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-
     dispatch(
       sendMessage({
         name: name,
@@ -27,7 +27,7 @@ const Form = () => {
         message: message,
       })
     );
-
+    addFeedback({ name, email, message });
     setName('');
     setEmail('');
     setMessage('');
@@ -53,7 +53,7 @@ const Form = () => {
         value={message}
         onChange={e => setMessage(e.target.value)}
       />
-      <Button>Send message</Button>
+      <Button type="submit">Send message</Button>
     </Container>
   );
 };
